@@ -1,2 +1,2 @@
-# nuxtjs-boilerplate
+# Nuxt.js Boilerplate
 Nuxt.js のボイラープレート
