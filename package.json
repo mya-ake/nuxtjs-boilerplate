@@ -7,12 +7,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "sls": "sls",
-    "sls:deploy": "sls deploy",
-    "deploy": "cross-env ENDPOINT_ENV=cf run-s build sls:deploy",
-    "deploy:api_gw": "cross-env ENDPOINT_ENV=api_gw run-s build sls:deploy",
-    "delete": "sls remove"
+    "precommit": "npm run lint"
   },
   "config": {
     "nuxt": {
