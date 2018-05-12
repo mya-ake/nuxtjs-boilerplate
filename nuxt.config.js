@@ -1,14 +1,9 @@
 'use strict'
 
 const path = require('path')
-const { ENV } = require('./configs/env')
 
 module.exports = {
   srcDir: 'app',
-
-  router: {
-    base: ENV.BASE_URL,
-  },
 
   render: {
     gzip: false,
