@@ -42,8 +42,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -59,7 +59,7 @@ module.exports = {
           options: {
             resources: [
               path.join(__dirname, 'app', 'assets', 'scss', '_variables.scss'),
-              path.join(__dirname, 'app', 'assets', 'scss', '_mixin.scss'),
+              path.join(__dirname, 'app', 'assets', 'scss', '_mixins.scss'),
             ],
           },
         })
