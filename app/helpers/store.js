@@ -1,7 +1,6 @@
-export const createModuleTypes = ({ moduleName, types }) => {
-  const obj = Object.assign({}, types)
-  Object.keys(types).forEach((key) => {
-    obj[key] = `${moduleName}/${obj[key]}`
-  })
-  return Object.freeze(obj)
+export const buildModuleTypes = ({ moduleName, types }) => {
+  return Object.entries(types).reduce((exportTypes, [type, value]) => {
+    exportTypes[type] = `${moduleName}/${value}`
+    return exportTypes
+  }, {})
 }
