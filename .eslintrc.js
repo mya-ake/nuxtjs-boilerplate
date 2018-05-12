@@ -28,6 +28,7 @@ module.exports = {
     'no-implicit-coercion': 'error',
     'no-mixed-operators': 'error',
     'no-var': 'error',
+    'prefer-arrow-callback': 'error',
   },
   globals: {},
 }
