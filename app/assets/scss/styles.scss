@@ -48,6 +48,7 @@ body {
 }
 
 main {
+  display: block;
   overflow: hidden;
 }
 
@@ -70,7 +71,7 @@ em {
   font-style: normal;
 }
 
-#__nuxt {
+#__nuxt, #__layout {
   height: 100%;
 }
 
